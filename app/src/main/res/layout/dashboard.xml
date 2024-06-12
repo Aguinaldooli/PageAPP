@@ -26,7 +26,7 @@
             android:layout_marginStart="87dp"
             android:layout_marginTop="33dp"
             android:fontFamily="@font/montserrat_medium"
-            android:text="@string/dashboard"
+            android:text="dashboard"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/button"
@@ -61,10 +61,10 @@
             <ImageView
                 android:id="@+id/ivPieChart"
                 android:layout_width="120dp"
-                android:layout_height="100dp"
+                android:layout_height="107dp"
                 android:layout_gravity="center_horizontal"
                 android:contentDescription="@string/category"
-                android:src="@drawable/piechart_image" />
+                android:src="@drawable/homegraph" />
 
             <Space
                 android:layout_width="0dp"
@@ -210,7 +210,7 @@
                 android:layout_height="130dp"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="@string/category"
-                android:src="@drawable/graph_bar_img" />
+                android:src="@drawable/graph_bar_img_modified2" />
 
         </LinearLayout>
 
@@ -244,7 +244,7 @@
                 android:layout_height="130dp"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="@string/category"
-                android:src="@drawable/graph_bar_img_2" />
+                android:src="@drawable/graph_bar_img_modified" />
 
         </LinearLayout>
 
@@ -266,7 +266,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:contentDescription="@string/category"
-                android:src="@drawable/money_flat_img" />
+                android:src="@drawable/money_end" />
 
             <LinearLayout
                 android:layout_width="match_parent"
