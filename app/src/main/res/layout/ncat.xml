@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header with back button and title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#4285F4"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Back Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Categorias"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Existing categories -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            android:text="● Alimentação"
+            android:textColor="#F4C1B9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            android:text="● Transporte"
+            android:textColor="#D678D8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            android:text="● Moradia"
+            android:textColor="#F2C94C"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● Lazer"
+            android:textColor="#4F4F4F"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Form for creating new category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:drawableStart="@drawable/ic_category"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:drawableStart="@drawable/ic_description"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Orçamento"
+            android:drawableStart="@drawable/ic_budget"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cor"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#FFEB3B"
+                android:background="@drawable/color_selector"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#9E9E9E"
+                android:background="@drawable/color_selector"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#4CAF50"
+                android:background="@drawable/color_selector"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#F44336"
+                android:background="@drawable/color_selector"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#9C27B0"
+                android:background="@drawable/color_selector"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#00BCD4"
+                android:background="@drawable/color_selector" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_add"
+            android:background="@drawable/circle_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Add Category" />
+    </LinearLayout>
+</LinearLayout>
+
